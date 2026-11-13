@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: block flow;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.headerTitle {
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-family: sans-serif;
+  font-size: clamp(24px, 2vw, 32px);
+  text-align: center;
+}
+
+.main {
+  position: fixed;
+  top: 100px;
+  display: block flow;
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+.samePageStorageForm {
+  display: block flex;
+  flex-direction: column;
+  gap: 2px;
+  width: min(800px, calc(100% - 18px));
+  margin: 18px auto;
+}
+
+.samePageStorageFormFieldset {
+  flex: 0 1 50%;
+  padding: 12px;
+}
+
+.samePageStorageFormFieldset.\--list {
+  padding-left: 24px;
+}
+
+.samePageStorageFormFieldset.\--buttons,
+.samePageStorageFormFieldset.\--options {
+  display: flex;
+  align-items: center;
+  gap: 9px 6px;
+  box-sizing: border-box;
+}
+
+.samePageStorageFormFieldset.\--buttons {
+  justify-content: center;
+}
+
+.samePageStorageFormFieldset.\--options {
+  justify-content: space-evenly;
+}
+
+.optionLabel {
+  text-align: center;
+  cursor: pointer;
+}
+
+.optionLabel {
+  flex: 0 1 49%;
+  padding: 12px 0 18px 0;
+  outline: 1px dashed rgb(127, 127, 127);
+}
+
+.option {
+  margin-right: 6px;
+}
+
+.samePageStorageFormList {
+  margin: 0;
+  padding-left: 44%;
+}
+
+.samePageStorageFormButton {
+  display: block;
+  width: 96px;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: block flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.footerParagraph {
+  text-align: center;
+}
+
+.pageLinkList {
+  display: inline flow-root;
+  margin: 0 0 0 12px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pageLinkListItem {
+  display: inline flow-root;
+  margin: 0;
+  padding: 0;
+
+  &:not(:last-child)::after {
+    content: '•';
+    display: inline flow-root;
+    margin: 0 9px 0 12px;
+  }
+}
+
