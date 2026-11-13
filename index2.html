@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>Same Page Storage • Page 2</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="/samepagestorage/styles/samepagestorage.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="headerTitle">Same Page Storage (Page 2)</h1>
+    </header>
+
+    <main class="main">
+      <form class="samePageStorageForm">
+        <fieldset class="samePageStorageFormFieldset  --list">
+         <ul class="samePageStorageFormList"></ul>
+        </fieldset>
+        <fieldset class="samePageStorageFormFieldset --buttons">
+          <button class="samePageStorageFormButton --addListItem" type="button">Add Item</button>
+          <button class="samePageStorageFormButton --removeListItem" type="button">Remove Item</button>
+        </fieldset>
+        <fieldset class="samePageStorageFormFieldset --options">
+          <label class="optionLabel"><input class="option --storage" type="radio" name="option" value="storage" checked />Storage</label>
+          <label class="optionLabel"><input class="option --samepagestorage" type="radio" name="option" value="samepagestorage" />Same Page Storage</label>
+        </fieldset>
+      </form>
+    </main>
+
+    <script type="module">
+      import '/samepagestorage/esmodules/populate-list.js';
+      import '/samepagestorage/esmodules/initialise-page.js';
+      import '/samepagestorage/esmodules/change-storage-type.js';
+      import '/samepagestorage/esmodules/word-list-operations.js';
+    </script>
+  </body>
+
+</html>  
