@@ -1,4 +1,4 @@
-import fullWordList from '/samepagestorage/data/full-word-list.json' with {type: 'json'};
+import fullWordList from './data/full-word-list.json' with {type: 'json'};
 
 const updateStoredWordList = (e, fullWordList) => {
   let currentWordList = JSON.parse(localStorage.getItem('currentWordListJSON'));
