@@ -1,4 +1,4 @@
-import samePageStorageBroadcastChannel from './esmodules/same-page-storage-broadcast-channel.js';
+import samePageStorageBroadcastChannel from './same-page-storage-broadcast-channel.js';
 
 const optionsFieldset = document.querySelector('.samePageStorageFormFieldset.\--options');
 
