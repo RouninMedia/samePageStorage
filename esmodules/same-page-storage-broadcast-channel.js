@@ -17,8 +17,7 @@ const createSamePageStorage = () => {
 };
 
 const handleBroadcastChannelMessage = (e) => {
-  console.log('e: ', e);
-  if (e.origin !== 'https://rounin.uk') return;
+  if (e.origin !== 'https://rouninmedia.github.io') return;
   switch (e.data.broadcastMessageType) {
     case ('storageTypeChanged'):
       document.querySelector(`.option.\--${e.data.storageType}`).checked = true;
