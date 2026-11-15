@@ -17,6 +17,7 @@ const createSamePageStorage = () => {
 };
 
 const handleBroadcastChannelMessage = (e) => {
+  console.log('e: ', e);
   if (e.origin !== 'https://rounin.uk') return;
   switch (e.data.broadcastMessageType) {
     case ('storageTypeChanged'):
